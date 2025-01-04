@@ -6,15 +6,35 @@
     <meta name="viewport" content="width-device-width, intial-scale-1.0">
     <meta name="description" content="Contact information for Jacob FitzDanos">
     <meta name="author" content="Jacob FitzDanos">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1>Want to connect?</h1>
-    <p>
-        email<br>
-        phone<br>
-        linkedin<br>
-    </p> 
-    <footer><a href="../Home/Home.html">Return Home</a> </footer>
+    <header>
+        <h1>Want to connect?</h1>
+    </header>
+    <form action="mailto:jdanos07@gmail.com" method="post" enctype="multipart/form-data">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Email Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Email</button>
+    </form>
+
+    <article>
+        <a href="https://www.linkedin.com/in/jdanos07/">Connect on LinkedIn</a>
+    </article>
+    <footer>
+        <a href="../Home/Home.html">Return Home</a> 
+    </footer>
 
 </body>
 </html>
